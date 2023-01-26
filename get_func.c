@@ -17,11 +17,11 @@ void (*get_op_func(char *token1))(stack_t **stack, unsigned int line_number)
 		{"mul", _mul},
 		{"div", _div},
 		{"mod", _mod},
-		/* {"pchar", pchar}, */
-		/*{"pstr", pstr}, */
+		{"pchar", pchar},
+		{"pstr", pstr},
 		{"nop", nop},
-		/*{"rotl", rotl}, */
-		/*{"rotr", rotr},*/
+		{"rotl", rotl},
+		{"rotr", rotr},
 		{NULL, NULL}
 	};
 	int i = 0;

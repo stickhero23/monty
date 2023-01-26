@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * is_number - checks if isdigit through iteration
+ * is_number - iterates each character of string to check of isdigit
  * @n: integer
  * Return: 0 if is number, else -1 if not
  */
@@ -19,8 +19,8 @@ int is_number(const char *n)
 	return (0);
 }
 /**
- * push - adds node to the start of doubly linked list
- * @h: head of linked lis, bottom
+ * push - adds node to the start of dlinkedlist
+ * @h: head of linked list (node at the bottom of stack)
  * @line_number: bytecode line number
  * @n: integer
  */
@@ -44,8 +44,8 @@ void push(stack_t **h, unsigned int line_number, const char *n)
 	}
 }
 /**
- * pop - removes node at front of doubly linked list
- * @h: head of linked list
+ * pop - removes node at front of dlinkedlist
+ * @h: head of linked list (node at the bottom of stack)
  * @line_number: bytecode line number
  */
 void pop(stack_t **h, unsigned int line_number)
